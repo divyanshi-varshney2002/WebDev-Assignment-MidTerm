@@ -1,0 +1,27 @@
+{
+  "name": "webdev-assignment-midterm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divyanshi-varshney2002/WebDev-Assignment-MidTerm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/divyanshi-varshney2002/WebDev-Assignment-MidTerm/issues"
+  },
+  "homepage": "https://github.com/divyanshi-varshney2002/WebDev-Assignment-MidTerm#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "ejs-mate": "^4.0.0",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.0.0",
+    "nodemon": "^2.0.21"
+  }
+}

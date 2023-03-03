@@ -4,28 +4,23 @@
 <div class="row">
     <div class="col-md-6 mx-auto">
         <form action="/products/<%=product._id%>?_method=PATCH" method="POST">
+            <h1>Edit Article</h1>
             <div class="mb-3">
                 <label class="form-label" for="name">Name : </label>
                 <input class="form-control" type="text" name="name" id="name" placeholder="Product Name" value="<%=product.name%>">
-            </div>
-            <div class="mb-3">
-                <label for="img" class="form-label">Image URL</label>
-                <input class="form-control" type="text" name="img" id="img" placeholder="Product Image URL" value="<%=product.img%>">
-            </div>
-        
-            <div class="mb-3">
-                <label for="price" class="form-label">Price</label>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">$</span>
-                    <input type="text" name="price" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" value="<%=product.price%>">
-                </div>  
             </div>
         
             <div class="mb-3">
                 <label class="form-label" for="desc">Description</label>
                 <textarea class="form-control" name="desc" id="desc" rows="5"><%=product.desc%> </textarea>
             </div>
-            <button type="submit" class="btn btn-sm btn-success">Save</button>
+
+            <div class="mb-3">
+                <label class="form-label" for="mark">Markdown</label>
+                <textarea class="form-control" name="mark" id="mark" rows="2"><%=product.mark%></textarea>
+            </div>
+            <button type="" class="btn btn-sm" style="background-color: gray;">Cancel</button>
+            <button type="submit" class="btn btn-sm btn-success">Edit</button>
         </form>
     </div>
 </div>

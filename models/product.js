@@ -7,17 +7,21 @@ const productSchema = new mongoose.Schema({
         trim: true,
         required: true
     },
-    img: {
-        type: String,
-        trim: true,
-        default: '/images/product.jpg'
-    },
-    price: {
-        type: Number,
-        min: 0,
-        default: 0
-    },
+    // img: {
+    //     type: String,
+    //     trim: true,
+    //     default: '/images/product.jpg'
+    // },
+    // price: {
+    //     type: Number,
+    //     min: 0,
+    //     default: 0
+    // },
     desc: {
+        type: String,
+        trim: true
+    },
+    mark:{
         type: String,
         trim: true
     }
